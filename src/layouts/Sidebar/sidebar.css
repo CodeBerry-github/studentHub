@@ -1,0 +1,135 @@
+.sidebar-left {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  padding: 15px;
+  background-color: #000;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar-left::-webkit-scrollbar {
+  width: 0.5em;
+  display: block;
+}
+
+.sidebar-left::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+
+.sidebar-left::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 0.15em solid black;
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+
+.sidebar-left::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(0, 0%, 100%, 0.85);
+}
+
+.profile-summary {
+  text-align: center;
+  color: #e8b86d;
+}
+
+.profile-summary img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.profile-summary h3 {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.profile-summary p {
+  font-size: 12px;
+  color: gray;
+  font-weight: bold;
+}
+
+.profile-summary .college {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.edit-profile {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  width: 150px;
+  margin-left: 25px;
+  background-color: #cedf9f;
+  color: #1b1b1b;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.edit-profile:hover {
+  background-color: hsl(76, 50%, 75%, 0.9);
+}
+
+.navigation, .explore {
+  background-color: #1b1b1b;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.explore {
+  margin-bottom: 50px;
+}
+
+.navigation ul, .explore ul {
+  list-style: none;
+}
+
+.explore h4, .navigation h4 {
+  font-size: 14px;
+  font-family: Montserrat;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  color: #a1d6b2;
+}
+
+.navigation ul li:not(:last-child), .explore ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.navigation ul li a, .explore ul li a {
+  position: relative;
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.navigation ul li a::after, .explore ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ccc; /* Change this to your desired underline color */
+  transition: width 0.5s;
+}
+
+.navigation ul li a:hover, .explore ul li a:hover {
+  color: #e8b86d; /* Add a color transition */
+}
+
+.navigation ul li a:hover::after, .explore ul li a:hover::after {
+  width: 100%;
+}
