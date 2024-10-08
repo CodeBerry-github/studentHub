@@ -54,7 +54,7 @@
   font-weight: bold;
 }
 
-.profile-summary .college {
+.profile-summary .profile-college {
   font-size: 12px;
   font-weight: bold;
 }
@@ -67,7 +67,7 @@
   font-weight: bold;
   font-size: 12px;
   width: 150px;
-  margin-left: 25px;
+  margin-left: 35px;
   background-color: #cedf9f;
   color: #1b1b1b;
   text-align: center;
@@ -80,7 +80,8 @@
 }
 
 .navigation, .explore {
-  background-color: #1b1b1b;
+  background-color: #0b0b0b;
+  border: 0.1px solid gray;
   padding: 10px 10px;
   border-radius: 10px;
   margin-bottom: 10px;

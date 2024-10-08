@@ -10,7 +10,7 @@ const Sidebar = () => {
         <img src={profile_pic} alt="Profile Avatar" />
         <h3>Anish Nagula</h3>
         <p>Computer Science Student</p>
-        <p className='college'>PES University, Bangalore</p>
+        <p className='profile-college'>PES University, Bangalore</p>
         <Link to="/profile" className="edit-profile">View Profile</Link>
       </div>
       <br />

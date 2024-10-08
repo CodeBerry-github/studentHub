@@ -82,7 +82,7 @@ a:not(.active):hover::after {
   top: 70px; /* Slightly below the navbar */
   right: 20px;
   width: 300px;
-  background-color: #1f1f1f; /* Dark background to match the theme */
+  background-color: #0b0b0b; /* Dark background to match the theme */
   color: #f6f4f1; /* Light text for contrast */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for elevation */
   z-index: 1000; /* To make sure it's above other elements */
@@ -110,7 +110,7 @@ a:not(.active):hover::after {
 .popup-content ul li {
   margin-bottom: 10px;
   font-size: 12px;
-  color: #f6f4f1; /* Light text color for readability */
+  color: gray; /* Light text color for readability */
 }
 
 .notification-popup::-webkit-scrollbar {
