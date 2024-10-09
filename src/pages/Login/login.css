@@ -1,0 +1,90 @@
+.login-main {
+  height: 100vh; /* Take up the full height of the viewport */
+  width: 100vw; /* Take up the full width of the viewport */
+  display: flex; /* Make it a flex container to center its content */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.login-container {
+  padding: 10px 20px;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  background-image: url('../../assets/loginBg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #000;
+}
+
+.login-container form input {
+  width: 260px;
+  padding-left: 10px;
+  height: 40px;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 0.5px solid #000;
+  background-color: transparent;
+}
+
+.login-container form input::placeholder {
+  color: #000;
+}
+
+.login-container form p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.login-container a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.login-container .login-button {
+  width: 260px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #cedf9d;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.login-container .login-button:hover {
+  background-color: hsl(76, 50%, 75%, 0.9);
+}
+
+.login-container .google-button {
+  background-color: #fff;
+  border: none;
+  width: 260px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.login-container .google-button:hover {
+  background-color: #f0f0f0;
+}
+
+.login-container .google-logo {
+  width: 20px;
+  height: 20px;
+}

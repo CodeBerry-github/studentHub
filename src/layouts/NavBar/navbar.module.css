@@ -113,3 +113,20 @@ a.active::after {
 .notification-popup::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.75);
 }
+
+.logout {
+  background-color: transparent;
+  border: 1px solid #f6f4f1;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff; /* Adjust the color as needed */
+  margin-left: 10px; /* Space from the profile picture */
+  font-size: 15px; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+.logout:hover {
+  background-color: #f6f4f1;
+  color: #000; /* Add hover effect */
+}

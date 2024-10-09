@@ -1,15 +1,27 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import profile_pic from '../../assets/anish.jpg';
 import styles from './navbar.module.css';
+import { auth } from '../../firebase.js'; // Adjust the path as necessary
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate(); // Use navigate to redirect after logout
   const [showNotifications, setShowNotifications] = useState(false);
 
   const toggleNotifications = (e) => {
     e.preventDefault(); // Prevent navigation away from the current route
     setShowNotifications(!showNotifications);
+  };
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth); // Sign out from Firebase
+      navigate('/'); // Redirect to the login page after logout
+    } catch (error) {
+      console.error('Logout error:', error); // Handle error as needed
+    }
   };
 
   return (
@@ -29,6 +41,10 @@ const Navbar = () => {
           >
             Notifications
           </Link>
+
+          <button onClick={handleLogout} className={styles.logout}>
+            Logout
+          </button>
 
           <div className={styles.profile}>
             <Link to="/profile"><img src={profile_pic} alt="Profile Avatar" /></Link>
