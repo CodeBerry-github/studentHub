@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import profile_pic from '../../assets/anish.jpg';
-import styles from './Sidebar.module.css';  // Import the CSS module
+import styles from './sidebar.module.css';  // Import the CSS module
 
 const Sidebar = () => {
   return (
