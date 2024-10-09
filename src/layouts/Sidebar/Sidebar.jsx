@@ -1,33 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import profile_pic from '../../assets/anish.jpg';
-import './sidebar.css'
+import styles from './Sidebar.module.css';  // Import the CSS module
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar-left">
-      <div className="profile-summary">
+    <aside className={styles.sidebarLeft}>
+      {/* Profile Summary */}
+      <div className={styles.profileSummary}>
         <img src={profile_pic} alt="Profile Avatar" />
         <h3>Anish Nagula</h3>
         <p>Computer Science Student</p>
-        <p className='profile-college'>PES University, Bangalore</p>
-        <Link to="/profile" className="edit-profile">View Profile</Link>
+        <p className={styles.profileCollege}>PES University, Bangalore</p>
+        <Link to="/profile" className={styles.editProfile}>View Profile</Link>
       </div>
-      <br />
-      <div className="navigation">
+      
+      {/* Navigation Section */}
+      <div className={styles.navigation}>
         <h4>Navigation</h4>
         <ul>
-          <li><a href="#">My Applications</a></li>
-          <li><a href="#">My Saved Opportunities</a></li>
-          <li><a href="#">My Projects</a></li>
-          <li><a href="#">My Collaborations</a></li>
+          <li><Link to="#">My Applications</Link></li>
+          <li><Link to="#">My Saved Opportunities</Link></li>
+          <li><Link to="#">My Projects</Link></li>
+          <li><Link to="#">My Collaborations</Link></li>
         </ul>
       </div>
-      <div className="explore">
+
+      {/* Explore Section */}
+      <div className={styles.explore}>
         <h4>Explore</h4>
         <ul>
-          <li><a href="#">Top Articles</a></li>
-          <li><a href="#">Student Rankings</a></li>
+          <li><Link to="#">Top Articles</Link></li>
+          <li><Link to="#">Student Rankings</Link></li>
         </ul>
       </div>
     </aside>

@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import profile_pic from '../../assets/anish.jpg';
-import './navbar.css';
-
-/*
-PAGES TO BE ADDED:
--Explore
-- Forum
-- Messages
-- Profile
-- Notifications
-- Login/Signup
-*/
+import styles from './navbar.module.css';
 
 const Navbar = () => {
   const location = useLocation();
@@ -24,32 +14,32 @@ const Navbar = () => {
 
   return (
     <>
-      <header>
-        <div className="logo">StudentHub</div>
-        <div className="nav-icons">
-          <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Explore</Link>
-          <Link to="/forum" className={location.pathname === '/forum' ? 'active' : ''}>Forum</Link>
-          <Link to="/messages" className={location.pathname === '/messages' ? 'active' : ''}>Messages</Link>
+      <header className={styles.header}>
+        <div className={styles.logo}>StudentHub</div>
+        <div className={styles['nav-icons']}>
+          <Link to="/" className={location.pathname === '/' ? styles.active : ''}>Explore</Link>
+          <Link to="/forum" className={location.pathname === '/forum' ? styles.active : ''}>Forum</Link>
+          <Link to="/messages" className={location.pathname === '/messages' ? styles.active : ''}>Messages</Link>
 
           {/* Notification Link */}
           <Link
             to="#"
-            className={showNotifications ? 'active' : ''} // Manually handle the active class
+            className={showNotifications ? styles.active : ''}
             onClick={toggleNotifications}
           >
             Notifications
           </Link>
 
-          <div className="profile">
-          <Link to="/profile"><img src={profile_pic} alt="Profile Avatar" /></Link>
+          <div className={styles.profile}>
+            <Link to="/profile"><img src={profile_pic} alt="Profile Avatar" /></Link>
           </div>
         </div>
       </header>
 
       {/* Notification Popup */}
       {showNotifications && (
-        <div className="notification-popup">
-          <div className="popup-content">
+        <div className={styles['notification-popup']}>
+          <div className={styles['popup-content']}>
             <h3>Notifications</h3>
             <ul>
               <li>You have a new message</li>
@@ -58,6 +48,7 @@ const Navbar = () => {
               <li>You have a new message</li>
               <li>New internship available at Google</li>
               <li>Jane Smith commented on your project</li>
+              <li>More notifications...</li>
             </ul>
           </div>
         </div>
