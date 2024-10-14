@@ -5,6 +5,9 @@ import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import './signup.css';
 import google_logo from '../../assets/Icons/Google.png'
+import ParticleEffect from '../../components/ParticleEffect.jsx';
+import password_icon from '../../assets/Icons/lock-stroke-rounded.svg';
+import email_icon from '../../assets/Icons/mail-stroke-rounded.svg';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -38,41 +41,65 @@ const Signup = () => {
 
   return (
     <div className='signup-main'>
-      <div className="signup-container">
-        <h1>Signup</h1>
-        {error && <p>{error}</p>}
-        <form onSubmit={handleSignup}>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
+      <ParticleEffect className="particle" />
+      <div className="signup-container-wrapper">
+        <div className="signup-container">
+          <h1>Signup</h1>
+          {error && <p>{error}</p>}
+          <form onSubmit={handleSignup}>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              style={{
+                backgroundImage: `url(${email_icon})`,
+                backgroundPosition: '10px 10px',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '15px 15px',
+                padding: '10px 40px'
+              }}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              style={{
+                backgroundImage: `url(${password_icon})`,
+                backgroundPosition: '10px 10px',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '15px 15px',
+                padding: '10px 40px'
+              }}
+            />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+              style={{
+                backgroundImage: `url(${password_icon})`,
+                backgroundPosition: '10px 10px',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '15px 15px',
+                padding: '10px 40px'
+              }}
+            />
 
-          <p>
-            Already have an account? <a href="/login">Login here</a>
-          </p>
+            <p>
+              Already have an account? <a href="/login">Login here</a>
+            </p>
 
-          <button className='signup-button' type="submit">Signup</button>
-        </form>
-        <button className="google-button" onClick={handleGoogleSignup}>
-          <img className="google-logo" src={google_logo} alt="Google Logo" />
-          Signup with Google</button>
+            <button className='signup-button' type="submit">Signup</button>
+          </form>
+          <button className="google-button" onClick={handleGoogleSignup}>
+            <img className="google-logo" src={google_logo} alt="Google Logo" />
+            Signup with Google</button>
+        </div>
       </div>
     </div>
   );

@@ -10,51 +10,74 @@ body {
   align-items: center; /* Center the content vertically */
 }
 
+.signup-container-wrapper {
+  position: relative;
+}
+
+.particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Make sure it's behind the login form */
+}
+
 .signup-container {
   padding: 10px 20px;
-  width: 300px;
-  height: 350px;
+  width: 350px;
+  height: 400px;
   border-radius: 10px;
-  background-image: url('../../assets/loginBg.jpg');
+  background-color: #191919;
   background-size: cover;
   background-position: center;
+  box-shadow: 0 0 40px rgb(206, 223, 157, 0.2);
+  border: 1px solid rgb(47, 47, 47);
 }
 
 .signup-container h1 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #000;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #f6f4f1;
 }
 
 .signup-container form input {
-  width: 260px;
+  width: 310px;
   padding-left: 10px;
+  margin: auto;
   height: 40px;
   font-size: 14px;
   display: block;
   margin-bottom: 10px;
   border-radius: 8px;
-  border: 0.5px solid #000;
-  background-color: transparent;
+  border: 1px solid rgb(47, 47, 47);
+  background-color: #000;
+  color: #f6f4f1;
 }
 
 .signup-container form input::placeholder {
-  color: #000;
+  color: #808080;
+  font-size: 12px;
+}
+
+.signup-container form input:focus {
+  outline: none;
 }
 
 .signup-container form p {
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .signup-container a {
   text-decoration: none;
-  color: darkblue;
+  color: #e8b86d;
 }
 
 .signup-container .signup-button {
-  width: 260px;
-  height: 40px;
+  width: 310px;
+  height: 38px;
   font-weight: bold;
   border-radius: 8px;
   font-size: 14px;
@@ -71,7 +94,7 @@ body {
 .signup-container .google-button {
   background-color: #fff;
   border: none;
-  width: 260px;
+  width: 310px;
   height: 40px;
   font-weight: bold;
   border-radius: 8px;
@@ -80,7 +103,7 @@ body {
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 80px;
   align-items: center;
 }
 
