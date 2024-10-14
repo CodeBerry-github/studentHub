@@ -78,7 +78,7 @@
 }
 
 .editProfile:hover {
-  background-color: hsl(76, 50%, 75%);
+  background-color: hsla(76, 50%, 75%, 0.9);
 }
 
 /* Navigation and Explore Sections */

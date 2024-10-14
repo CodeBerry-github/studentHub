@@ -29,7 +29,7 @@ const Navbar = () => {
       <header className={styles.header}>
         <div className={styles.logo}>StudentHub</div>
         <div className={styles['nav-icons']}>
-          <Link to="/" className={location.pathname === '/' ? styles.active : ''}>Explore</Link>
+          <Link to="/home" className={location.pathname === '/' ? styles.active : ''}>Explore</Link>
           <Link to="/forum" className={location.pathname === '/forum' ? styles.active : ''}>Forum</Link>
           <Link to="/messages" className={location.pathname === '/messages' ? styles.active : ''}>Messages</Link>
 

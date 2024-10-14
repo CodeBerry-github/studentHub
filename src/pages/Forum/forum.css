@@ -28,7 +28,7 @@ body {
   background-color: #000;
   margin-left: 250px;
   margin-right: 250px;
-  width: 665px;
+  width: auto;
   padding-top: 100px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
