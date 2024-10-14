@@ -44,7 +44,7 @@ body {
 
 .signup-container form input {
   width: 310px;
-  padding-left: 10px;
+  padding-left: 40px;
   margin: auto;
   height: 40px;
   font-size: 14px;
@@ -54,6 +54,31 @@ body {
   border: 1px solid rgb(47, 47, 47);
   background-color: #000;
   color: #f6f4f1;
+  position: relative;
+}
+
+.signup-email-icon {
+  position: absolute;
+  left: 30px;
+  top: 120px;
+  transform: translateY(-50%);
+  color: #888;
+  height: 16px;
+  width: 20px;
+}
+
+.signup-password-icon-1, .signup-password-icon-2 {
+  position: absolute;
+  left: 30px;
+  top: 170px;
+  transform: translateY(-50%);
+  color: #888;
+  height: 16px;
+  width: 20px;
+}
+
+.signup-password-icon-2 {
+  top: 220px;
 }
 
 .signup-container form input::placeholder {

@@ -40,7 +40,7 @@
 
 .login-container form input {
   width: 310px;
-  padding-left: 10px;
+  padding-left: 40px;
   margin: auto;
   height: 40px;
   font-size: 14px;
@@ -50,6 +50,27 @@
   border: 1px solid rgb(47, 47, 47);
   background-color: #000;
   color: #f6f4f1;
+  position: relative;
+}
+
+.login-email-icon {
+  position: absolute;
+  left: 30px;
+  top: 140px;
+  transform: translateY(-50%);
+  color: #888;
+  height: 16px;
+  width: 20px;
+}
+
+.login-password-icon {
+  position: absolute;
+  left: 30px;
+  top: 190px;
+  transform: translateY(-50%);
+  color: #888;
+  height: 16px;
+  width: 20px;
 }
 
 .login-container form input::placeholder {

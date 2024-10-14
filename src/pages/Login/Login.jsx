@@ -47,28 +47,16 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              style={{
-                backgroundImage: `url(${email_icon})`,
-                backgroundPosition: '10px 10px',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: '15px 15px',
-                padding: '10px 40px'
-              }}
             />
+            <img className='login-email-icon' src={email_icon} alt="email icon" />
             <input
               type="password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              style={{
-                backgroundImage: `url(${password_icon})`,
-                backgroundPosition: '10px 10px',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: '15px 15px',
-                padding: '10px 40px'
-              }}
             />
+            <img className='login-password-icon' src={password_icon} alt="password icon" />
             <p>
               Don't have an account? <a href="/signup">Sign up here</a>
             </p>
