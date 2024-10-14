@@ -28,12 +28,18 @@ body {
   width: 350px;
   height: 400px;
   border-radius: 10px;
-  background-color: #191919;
+  backdrop-filter: blur(10px);
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 40px rgb(206, 223, 157, 0.2);
+  box-shadow: 0 0 40px rgb(206, 223, 157, 0.1);
   border: 1px solid rgb(47, 47, 47);
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+.signup-container:hover {
+  box-shadow: 0 0 40px rgb(206, 223, 157, 0.2);
+}
+
 
 .signup-container h1 {
   text-align: center;
