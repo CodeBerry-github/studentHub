@@ -31,13 +31,13 @@ body {
   backdrop-filter: blur(10px);
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 40px rgb(206, 223, 157, 0.1);
+  box-shadow: 0 0 40px rgba(31, 111, 234,  0.1);
   border: 1px solid rgb(47, 47, 47);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .signup-container:hover {
-  box-shadow: 0 0 40px rgb(206, 223, 157, 0.2);
+  box-shadow: 0 0 40px rgba(31, 111, 234,  0.2);
 }
 
 
@@ -103,7 +103,7 @@ body {
 
 .signup-container a {
   text-decoration: none;
-  color: #e8b86d;
+  color: #7c838c;
 }
 
 .signup-container .signup-button {
@@ -113,13 +113,13 @@ body {
   border-radius: 8px;
   font-size: 14px;
   border: none;
-  background-color: #cedf9d;
+  background-color: #1f6fea;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
 .signup-container .signup-button:hover {
-  background-color: hsl(76, 50%, 75%, 0.9);
+  background-color: hsl(216, 83%, 52%, 0.9);
 }
 
 .signup-container .google-button {

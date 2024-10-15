@@ -6,16 +6,16 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #000409;
   color: #f6f4f1;
   max-height: 300px;
 }
 
 /* Right Sidebar */
 .home-sidebar-right {
-  background-color: #000;
+  background-color: #0d1016;
   padding: 20px;
-  border-left: 1px solid #f6f4f1;
+  border-left: 1.5px solid #2f343a;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   right: 0;
@@ -42,7 +42,7 @@ body {
   background-color: #000;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #f6f4f1;
+  border-bottom: 1.5px solid #2f343a;
 }
 
 .home-search-bar-home input {
@@ -50,8 +50,8 @@ body {
   margin: 10px 0;
   height: 30px;
   width: 400px;
-  border: 1px solid #ccc;
-  background-color: #d8d7d5;
+  border: 1.5px solid #2f343a;
+  background-color: #000409;
   font-weight: bold;
   border-radius: 16px;
   position: relative;
@@ -85,6 +85,7 @@ body {
   height: auto;
   cursor: pointer;
   z-index: 1000;
+  color: #7c838c;
 }
 
 .home-filter-dropdown {
@@ -138,9 +139,9 @@ body {
 .home-post-container .home-post {
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #0b0b0b;
-  border-radius: 8px;
-  border: 1.5px solid gray;
+  background-color: #141b23;
+  border-radius: 5px;
+  border: 1.5px solid #2f343a;
 }
 
 .home-post h3 {
@@ -179,18 +180,19 @@ body {
 
 .home-post .home-post_btn {
   padding: 6px 10px;
-  background-color: #cedf9f;
+  background-color: #1f6fea;
   margin-top: 0;
-  color: #1b1b1b;
+  color: #f6f4f1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: Montserrat;
   font-weight: bold;
+  font-size: 12px;
 }
 
 .home-post .home-post_btn:hover {
-  background-color: hsl(76, 50%, 75%, 0.9);
+  background-color: hsl(135, 51%, 44%);
 }
 
 /* Sidebar Right Styling */
@@ -199,7 +201,7 @@ body {
   font-family: Montserrat;
   font-size: large;
   margin-bottom: 20px;
-  color: #a1d6b2;
+  color: #f6f4f1;
   text-decoration: underline;
 }
 

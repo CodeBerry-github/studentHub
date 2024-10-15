@@ -3,9 +3,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
-  background-color: #000;
-  border-bottom: 1px solid #f6f4f1;
+  padding: 6px 20px;
+  background-color: #000409;
+  border-bottom: 1.5px solid #2f343a;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -31,6 +31,7 @@ header {
   color: #f6f4f1;
   font-weight: bold;
   position: relative;
+  font-size: 16px;
 }
 
 /* Active link underline effect */
@@ -115,8 +116,8 @@ a.active::after {
 }
 
 .logout {
-  background-color: transparent;
-  border: 1px solid #f6f4f1;
+  background-color: hsla(212, 19%, 16%, 0.6);
+  border: 1px solid #2f343a;
   padding: 5px 10px 6px 10px;
   border-radius: 4px;
   cursor: pointer;
@@ -128,6 +129,5 @@ a.active::after {
 }
 
 .logout:hover {
-  background-color: #f6f4f1;
-  color: #000; /* Add hover effect */
+  background-color: hsla(212, 19%, 16%);
 }

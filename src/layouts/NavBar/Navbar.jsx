@@ -45,10 +45,6 @@ const Navbar = () => {
           <button onClick={handleLogout} className={styles.logout}>
             Logout
           </button>
-
-          <div className={styles.profile}>
-            <Link to="/profile"><img src={profile_pic} alt="Profile Avatar" /></Link>
-          </div>
         </div>
       </header>
 

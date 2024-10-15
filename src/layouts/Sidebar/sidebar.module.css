@@ -6,8 +6,8 @@
   width: 250px;
   height: 100vh;
   padding: 15px;
-  background-color: #000;
-  border-right: 1px solid #ddd;
+  background-color: #0d1016;
+  border-right: 1.5px solid #2f343a;
   overflow-y: auto;
 }
 
@@ -34,7 +34,7 @@
 /* Profile Summary */
 .profileSummary {
   text-align: center;
-  color: #e8b86d;
+  color: #f6f4f1;
 }
 
 .profileSummary img {
@@ -70,22 +70,22 @@
   font-weight: bold;
   font-size: 12px;
   width: 150px;
-  background-color: #cedf9f;
-  color: #1b1b1b;
+  background-color: #1f6fea;
+  color: #f6f4f1;
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .editProfile:hover {
-  background-color: hsla(76, 50%, 75%, 0.9);
+  background-color: hsl(135, 51%, 44%);
 }
 
 /* Navigation and Explore Sections */
 .navigation,
 .explore {
   background-color: #0b0b0b;
-  border: 1px solid #333;
+  border: 1px solid #2f343a;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -101,7 +101,7 @@
 .explore h4 {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
-  color: #a1d6b2;
+  color: #f6f4f1;
   margin-bottom: 10px;
   text-decoration: underline;
 }
