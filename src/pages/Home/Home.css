@@ -157,6 +157,13 @@ body {
   color: #b0b0b0;
 }
 
+.home-post .home-post-img {
+  width: auto;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
 .home-description {
   margin-bottom: 20px;
   color: #b0b0b0;
