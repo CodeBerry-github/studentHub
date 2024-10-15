@@ -78,7 +78,7 @@
 }
 
 .editProfile:hover {
-  background-color: hsl(135, 51%, 44%);
+  background-color: hsl(216, 83%, 52%, 0.9);
 }
 
 /* Navigation and Explore Sections */
@@ -124,7 +124,7 @@
 
 .navigation ul li a:hover,
 .explore ul li a:hover {
-  color: #e8b86d;
+  color: gray;
 }
 
 /* Hover Underline Effect */
@@ -133,10 +133,10 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 10px;
   width: 0;
   height: 1px;
-  background-color: #e8b86d;
+  background-color: gray;
   transition: width 0.4s ease-in-out;
 }
 
