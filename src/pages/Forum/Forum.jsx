@@ -17,10 +17,7 @@ const Forum = () => {
         </main>
 
         <aside className="forum-sidebar-right">
-          <div className="forum-list">
-            <h4>Forums</h4>
-            
-          </div>
+          <h4>Forums</h4>
         </aside>
       </div>
     </div>

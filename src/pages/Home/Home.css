@@ -19,9 +19,9 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   right: 0;
-  top: 44px;
-  width: 250px;
-  max-height: 100vh;
+  top: 48px;
+  width: 19.5%;
+  height: 100vh;
   overflow-y: auto;
 }
 
@@ -29,16 +29,16 @@ body {
 .home-container {
   height: 100vh;
   display: flex;
-  width: 1280px;
+  width: auto;
   justify-content: space-between;
 }
 
 .home-search-bar-home {
   margin: 10px 0;
-  width: 780px;
+  width: 61%;
   padding: 0 20px;
   position: fixed;
-  top: 33px;
+  top: 37px;
   background-color: #000;
   display: flex;
   justify-content: space-between;
@@ -122,9 +122,8 @@ body {
 /* Main Feed */
 .home-main-feed {
   background-color: #000;
-  margin-left: 250px;
-  margin-right: 250px;
-  width: 100%;
+  margin: 0 auto;
+  width: 61%;
   padding-top: 100px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;

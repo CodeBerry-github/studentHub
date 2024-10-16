@@ -1,9 +1,9 @@
 /* Sidebar Styles */
 .sidebarLeft {
   position: fixed;
-  top: 44px;
+  top: 48px;
   left: 0;
-  width: 250px;
+  width: 19.5%;
   height: 100vh;
   padding: 15px;
   background-color: #0d1016;

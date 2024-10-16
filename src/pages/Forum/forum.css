@@ -12,23 +12,29 @@ body {
 }
 
 .forum-sidebar-right {
-  background-color: #000;
+  background-color: #0d1016;
   padding: 20px;
-  border-left: 1px solid #f6f4f1;
+  border-left: 1.5px solid #2f343a;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   right: 0;
-  top: 44px;
-  width: 250px;
+  top: 48px;
+  width: 19.5%;
   height: 100vh;
+}
+
+.forum-container {
+  height: 100vh;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
 }
 
 /* Main Feed */
 .forum-feed {
   background-color: #000;
-  margin-left: 250px;
-  margin-right: 250px;
-  width: auto;
+  margin: 0 auto;
+  width: 61%;
   padding-top: 100px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
@@ -36,7 +42,7 @@ body {
 }
 
 .forum-search-bar-forum {
-  width: 665px;
+  width: 61%;
   padding: 0 20px;
   position: fixed;
   bottom: 0;
@@ -50,7 +56,7 @@ body {
   padding: 8px 20px;
   margin: 10px 0;
   height: 30px;
-  width: 772px;
+  width: 100%;
   border: 1px solid #ccc;
   background-color: #d8d7d5;
   font-weight: bold;
@@ -114,24 +120,24 @@ button {
 }
 
 
-.forum-list h4 {
+.forum-sidebar-right h4 {
   font-weight: bold;
   font-family: Montserrat;
   font-size: large;
   margin-bottom: 10px;
-  color: #a1d6b2;
+  color: #f6f4f1;
   text-decoration: underline;
 }
 
-.forum-list ul, .forum-notifications ul {
+.forum-sidebar-right ul, .forum-notifications ul {
   list-style: none;
 }
 
-.forum-list ul li, .forum-notifications ul li {
+.forum-sidebar-right ul li, .forum-notifications ul li {
   margin-bottom: 10px;
 }
 
-.forum-list ul li a {
+.forum-sidebar-right ul li a {
   text-decoration: none;
   color: gray;
   font-size: 12px;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import profile_pic from '../../assets/anish.jpg';
 import styles from './navbar.module.css';
 import { auth } from '../../firebase.js'; // Adjust the path as necessary
 import { signOut } from 'firebase/auth';
