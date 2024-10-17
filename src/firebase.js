@@ -1,15 +1,14 @@
-// src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCtevzxRN2V6VwJ_AzIRbXp52zJzkQc_Y4",
-  authDomain: "studenthub-872a1.firebaseapp.com",
-  projectId: "studenthub-872a1",
-  storageBucket: "studenthub-872a1.appspot.com",
-  messagingSenderId: "448611113170",
-  appId: "1:448611113170:web:08b7beca509e04754fb50b",
-  measurementId: "G-0EJ97T9341"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
