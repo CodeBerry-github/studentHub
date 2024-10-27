@@ -53,7 +53,7 @@ body {
   border: 1.5px solid #2f343a;
   background-color: #000409;
   font-weight: bold;
-  border-radius: 16px;
+  border-radius: 10px;
   position: relative;
   transition: width 0.4s ease-in-out;
 }
