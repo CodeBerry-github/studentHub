@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { auth } from './firebase'; // Import your Firebase auth
+import { auth } from './firebase';
 import Home from './pages/Home/Home';
 import Forum from './pages/Forum/Forum';
 import Messaging from './pages/Messaging/Messaging';
@@ -8,6 +8,7 @@ import Profile from './pages/Profile/Profile';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import { onAuthStateChanged } from 'firebase/auth';
+import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -22,15 +23,13 @@ const App = () => {
     return () => unsubscribe();
   }, []);
 
-  // Show loading state while determining authentication status
   if (loading) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner />;
   }
 
   return (
     <Router>
       <Routes>
-        {/* Redirect to home if user is logged in */}
         <Route path="/" element={user ? <Navigate to="/home" /> : <Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={user ? <Home /> : <Navigate to="/" />} />
