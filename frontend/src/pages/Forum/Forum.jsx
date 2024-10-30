@@ -15,6 +15,7 @@ import comment from '../../assets/Icons/bubble-chat-stroke-rounded.svg'
 import share from '../../assets/Icons/share-01-stroke-rounded.svg'
 import reply from '../../assets/Icons/arrow-move-up-left-stroke-rounded.svg'
 import reply_next from '../../assets/Icons/arrow-move-down-right-stroke-rounded.svg'
+import deleteIcon from '../../assets/Icons/delete-02-stroke-rounded.svg'
 
 const Thread = (props) => {
   return (
@@ -61,6 +62,17 @@ const ForumPost = ({ postDetails }) => {
       setComments(updatedComments);
       setReplyInput({ ...replyInput, [index]: undefined });  // Close reply field after replying
     }
+  };
+
+  const handleDeleteReply = (commentIndex, replyIndex) => {
+    const updatedComments = comments.map((comment, i) => {
+      if (i === commentIndex) {
+        const updatedReplies = comment.replies.filter((_, rIndex) => rIndex !== replyIndex);
+        return { ...comment, replies: updatedReplies };
+      }
+      return comment;
+    });
+    setComments(updatedComments);
   };
 
   return (
@@ -117,6 +129,12 @@ const ForumPost = ({ postDetails }) => {
                   <div key={replyIndex} className="forum_reply">
                     <img src={reply_next} alt="arrow" />
                     <strong>{reply.user}:</strong> <p>{reply.text}</p>
+                    <img 
+                      src={deleteIcon} 
+                      alt="delete" 
+                      onClick={() => handleDeleteReply(index, replyIndex)}
+                      style={{ cursor: 'pointer', marginLeft: '8px' }}
+                    />
                   </div>
                 ))}
               </div>
