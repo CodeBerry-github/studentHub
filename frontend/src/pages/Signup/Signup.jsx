@@ -45,7 +45,6 @@ const Signup = () => {
       <div className="signup-container-wrapper">
         <div className="signup-container">
           <h1>Signup</h1>
-          {error && <p>{error}</p>}
           <form onSubmit={handleSignup}>
             <input
               type="email"
@@ -81,6 +80,7 @@ const Signup = () => {
           <button className="google-button" onClick={handleGoogleSignup}>
             <img className="google-logo" src={google_logo} alt="Google Logo" />
             Signup with Google</button>
+            {error && <p className="signup-error-text">{error}</p>}
         </div>
       </div>
     </div>

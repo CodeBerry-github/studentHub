@@ -43,8 +43,8 @@ body {
 
 .signup-container h1 {
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: #f6f4f1;
 }
 
@@ -66,7 +66,7 @@ body {
 .signup-email-icon {
   position: absolute;
   left: 30px;
-  top: 120px;
+  top: 100px;
   transform: translateY(-50%);
   color: #888;
   height: 16px;
@@ -76,7 +76,7 @@ body {
 .signup-password-icon-1, .signup-password-icon-2 {
   position: absolute;
   left: 30px;
-  top: 170px;
+  top: 150px;
   transform: translateY(-50%);
   color: #888;
   height: 16px;
@@ -84,7 +84,13 @@ body {
 }
 
 .signup-password-icon-2 {
-  top: 220px;
+  top: 200px;
+}
+
+.signup-error-text {
+  font-size: 10px;
+  margin-top: 8px;
+  color: red;
 }
 
 .signup-container form input::placeholder {
